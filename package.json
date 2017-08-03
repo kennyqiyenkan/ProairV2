@@ -2,9 +2,14 @@
   "name": "proair-v2",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "6.11.0",
+    "npm": "3.10.10"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    // "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
