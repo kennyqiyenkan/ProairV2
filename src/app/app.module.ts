@@ -9,6 +9,7 @@ import { CompanyComponent } from './company/company.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TeamComponent } from './team/team.component';
 import { NavigationBarComponent } from './shared/navigation-bar/navigation-bar.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavigationBarComponent } from './shared/navigation-bar/navigation-bar.c
     CompanyComponent,
     ProjectsComponent,
     TeamComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -3,3 +3,17 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+
+.row {
+  margin-top: 12px;
+  display: inline-block;
+  width: 100%;
+}
+
+.row.margin-override {
+  margin-top: 0;
+}
+
+.col {
+  display: inline-block;
+}

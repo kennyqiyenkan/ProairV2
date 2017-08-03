@@ -38,6 +38,20 @@
   color: #ffffff;
   margin-right: 35px;
   outline: none;
+  text-align: center;
+}
+
+.link p {
+  display: inline;
+  margin: 0;
+}
+
+.link.image {
+  margin: 0;
+}
+
+.link.image:last-child {
+  margin-right: 20px;
 }
 
 .link.selected {
@@ -51,4 +65,27 @@
 .link:hover {
   cursor: pointer;
   border-bottom: 3px solid #ffffff;
+}
+
+@media screen and (max-width: 991px) {
+  .content {
+    width: 100%;
+  }
+  .link-container {
+    margin-top: 20px;
+  }
+  .link {
+    opacity: 0.6;
+  }
+  .link.image {
+    margin-right: 50px;
+  }
+  .link.selected {
+    border: none;
+    opacity: 1;
+  }
+  .link:hover {
+    border: none;
+    opacity: 0.8;
+  }
 }

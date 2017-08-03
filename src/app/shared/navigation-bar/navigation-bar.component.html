@@ -3,10 +3,22 @@
     <img src="./../../assets/images/ic-barLogo.svg" alt="Logo">
     <div class="link-container">
       <ul>
-        <li class="link" routerLink="/home" routerLinkActive="selected">Home</li>
-        <li class="link" routerLink="/company" routerLinkActive="selected">Company</li>
-        <li class="link" routerLink="/projects" routerLinkActive="selected">Projects</li>
-        <li class="link" routerLink="/team" routerLinkActive="selected">Team</li>
+        <li *ngIf="isSmallWidth" class="link image" routerLink="/home" routerLinkActive="selected">
+          <img src="../../../assets/images/ic-home.svg">
+        </li>
+        <li *ngIf="isSmallWidth" class="link image" routerLink="/company" routerLinkActive="selected">
+          <img src="../../../assets/images/ic-company.svg">
+        </li>
+        <li *ngIf="isSmallWidth" class="link image" routerLink="/projects" routerLinkActive="selected">
+          <img src="../../../assets/images/ic-projects.svg">
+        </li>
+        <li *ngIf="isSmallWidth" class="link image" routerLink="/team" routerLinkActive="selected">
+          <img src="../../../assets/images/ic-team.svg">
+        </li>
+        <li *ngIf="!isSmallWidth" class="link" routerLink="/home" routerLinkActive="selected">Home</li>
+        <li *ngIf="!isSmallWidth" class="link" routerLink="/company" routerLinkActive="selected">Company</li>
+        <li *ngIf="!isSmallWidth" class="link" routerLink="/projects" routerLinkActive="selected">Projects</li>
+        <li *ngIf="!isSmallWidth" class="link" routerLink="/team" routerLinkActive="selected">Team</li>
       </ul>
     </div>
   </div>
