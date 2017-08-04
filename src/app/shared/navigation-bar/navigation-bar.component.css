@@ -106,7 +106,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   .bar {
     height: 60px;
   }
