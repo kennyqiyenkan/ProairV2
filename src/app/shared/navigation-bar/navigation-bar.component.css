@@ -4,6 +4,22 @@
   background-color: #112d4e;
 }
 
+.logoContainer {
+  position: relative;
+  background-color: transparent;
+  height: 70px;
+  display: inline-block;
+}
+
+.logoContainer img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .content {
   width: 992px;
   height: 100%;
@@ -67,7 +83,7 @@
   border-bottom: 3px solid #ffffff;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .content {
     width: 100%;
   }
@@ -87,5 +103,33 @@
   .link:hover {
     border: none;
     opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .bar {
+    height: 60px;
+  }
+
+  .logoContainer {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+
+  .link-container {
+    margin-top: 18px;
+  }
+
+  .link.image {
+    width: 24px;
+    height: 24px;
+    margin-right: 25px;
+  }
+
+  .link img {
+    width: 24px;
+    height: 24px;
   }
 }

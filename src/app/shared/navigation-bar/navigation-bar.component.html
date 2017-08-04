@@ -1,6 +1,8 @@
 <div class="bar">
   <div class="content">
-    <img src="./../../assets/images/ic-barLogo.svg" alt="Logo">
+    <div class="logoContainer">
+      <img src="{{logoPath}}" alt="Logo">
+    </div>
     <div class="link-container">
       <ul>
         <li *ngIf="isSmallWidth" class="link image" routerLink="/home" routerLinkActive="selected">

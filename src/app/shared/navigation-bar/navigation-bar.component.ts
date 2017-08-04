@@ -10,6 +10,9 @@ export class NavigationBarComponent implements OnInit {
   constructor() { }
 
   isSmallWidth = false;
+  logoPath = "";
+  fullSizeLogoPath = "./../../assets/images/ic-fullLogo.svg";
+  miniSizeLogoPath = "./../../assets/images/ic-miniLogo.svg";
   
   ngOnInit() {
     this.onResize(null);
@@ -17,8 +20,10 @@ export class NavigationBarComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    if ( window.innerWidth <= 991 ) this.isSmallWidth = true;
-    else this.isSmallWidth = false; 
-    console.log(this.isSmallWidth);
+    if ( window.innerWidth <= 992 ) this.isSmallWidth = true;
+    else this.isSmallWidth = false;
+    
+    if ( window.innerWidth <= 320 ) this.logoPath = this.miniSizeLogoPath;
+    else this.logoPath = this.fullSizeLogoPath;
   }
 }
