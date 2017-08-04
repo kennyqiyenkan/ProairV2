@@ -132,4 +132,9 @@
     width: 24px;
     height: 24px;
   }
+
+  .link:hover {
+    border: none;
+    opacity: 1;
+  }
 }
