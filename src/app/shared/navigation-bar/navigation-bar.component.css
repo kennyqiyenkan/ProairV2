@@ -103,7 +103,7 @@
   }
 }
 
-@media screen and (max-width: 505px) {
+@media screen and (max-width: 580px) {
   .bar {
     height: 60px;
   }

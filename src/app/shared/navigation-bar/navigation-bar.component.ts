@@ -23,7 +23,7 @@ export class NavigationBarComponent implements OnInit {
     if ( window.innerWidth <= 992 ) this.isSmallWidth = true;
     else this.isSmallWidth = false;
     
-    if ( window.innerWidth <= 505 ) this.logoPath = this.miniSizeLogoPath;
+    if ( window.innerWidth <= 580 ) this.logoPath = this.miniSizeLogoPath;
     else this.logoPath = this.fullSizeLogoPath;
   }
 }
