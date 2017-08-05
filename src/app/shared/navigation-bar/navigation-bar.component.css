@@ -55,11 +55,7 @@
   margin-right: 35px;
   outline: none;
   text-align: center;
-}
-
-.link p {
-  display: inline;
-  margin: 0;
+  font-weight: lighter;
 }
 
 .link.image {
@@ -72,6 +68,7 @@
 
 .link.selected {
   border-bottom: 3px solid #ffffff;
+  font-weight: normal;
 }
 
 .link:last-child{

@@ -2,6 +2,11 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  min-height: 100%;
+}
+
+.body-wrapper {
+  min-height: calc(100vh - 280px);
 }
 
 .row {
@@ -16,4 +21,10 @@ body {
 
 .col {
   display: inline-block;
+}
+
+@media screen and (max-width: 992px) {
+  .body-wrapper {
+    min-height: calc(100vh - 505px);
+  }
 }
