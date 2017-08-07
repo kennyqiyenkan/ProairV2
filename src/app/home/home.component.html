@@ -1,8 +1,8 @@
 <div class="row-banner">
   <div class="container">
     <div class="banner-text-container">
-      <p class="banner-title">We handle all your HVAC needs</p>
-      <p class="banner-subtitle">With the longest history in Malaysia, Proair is known as the expert in the HVAC construction industry for shipyards.</p>
+      <p class="banner-title">We handle all your HVACR needs</p>
+      <p class="banner-subtitle">With the longest history in Malaysia, Proair is known as the expert in the HVACR construction industry for shipyards.</p>
       <button routerLink="/company" class="banner-learnmore-btn">Learn More</button>
     </div>
   </div>
@@ -47,4 +47,16 @@
       </div>
     </div>
   </div>
+</div>
+<div class="whoweare-row">
+  <div class="container">
+    <div class="trackrecord-text-container">
+      <p class="row-title">Our Track Record</p>
+      <p class="row-text">PROAIR SDN BHD has a respectable portfolio of completed projects. Among our notable projects are:</p>
+      <button (click)="selectProject(0)" class="trackrecord-project-btn" [ngClass]="{ 'selected': selectedProjectImgIndex == 0 }">Project 0</button>
+      <button (click)="selectProject(1)" class="trackrecord-project-btn" [ngClass]="{ 'selected': selectedProjectImgIndex == 1 }">Project 1</button>
+      <button (click)="selectProject(2)" class="trackrecord-project-btn" [ngClass]="{ 'selected': selectedProjectImgIndex == 2 }">Project 2</button>
+    </div>
+  </div>
+  <img class="trackrecord-img" src="{{selectedProjectImgSrc}}">
 </div>

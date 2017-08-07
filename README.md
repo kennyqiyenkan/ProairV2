@@ -1,5 +1,5 @@
 # ProairV2
-Proair is a marine HVAC company based in Malaysia.
+Proair is a marine HVACR company based in Malaysia.
 
 This is the repository for the company's website.
 
