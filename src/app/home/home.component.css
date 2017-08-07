@@ -171,8 +171,21 @@
 
 .whatwedo-card-container {
   margin: auto;
-  margin-top: 20px;
+  margin-top: 30px;
   width: fit-content;
+}
+
+.whatwedo-card-row {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.whatwedo-card-row:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .whatwedo-card {
@@ -225,6 +238,10 @@
 
   .whoweare-text-container {
     width: 100%;
+  }
+
+  .whatwedo-card-row {
+    display: block;
   }
 }
 
