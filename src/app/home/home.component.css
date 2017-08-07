@@ -242,6 +242,11 @@
 
   .whatwedo-card-row {
     display: block;
+    margin-right: 0;
+  }
+
+  .whatwedo-card {
+    width: 280px;
   }
 }
 
