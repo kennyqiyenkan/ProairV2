@@ -6,7 +6,7 @@ body {
 }
 
 .body-wrapper {
-  min-height: calc(100vh - 355px);
+  min-height: calc(100vh - 375px);
 }
 
 .row {
