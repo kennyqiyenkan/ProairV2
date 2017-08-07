@@ -90,7 +90,7 @@
   float: right;
 }
 
-.whoweare-title {
+.row-title {
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 1.6px;
@@ -98,7 +98,7 @@
   margin-top: 0;
 }
 
-.whoweare-text {
+.row-text {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.6px;
@@ -152,6 +152,66 @@
   color: #ffffff;
 }
 
+.whatwedo-row {
+  padding: 60px 0;
+}
+
+.whatwedo-row .container {
+  padding: 0 20px;
+}
+
+.whatwedo-row .row-title {
+  text-align: center;
+}
+
+.whatwedo-row .row-text {
+  max-width: 713px;
+  margin: auto;
+}
+
+.whatwedo-card-container {
+  margin: auto;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.whatwedo-card {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px; 
+  width: 226px;
+  height: 200px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(14, 28, 61, 0.1);
+  padding: 17px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.whatwedo-card:last-child {
+  margin-right: 0;
+}
+
+.whatwedo-card img {
+  width: 80px;
+  height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 17px;
+  left: 0;
+  right: 0;
+}
+
+.whatwedo-card p {
+  margin-top: 92px;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 0.6px;
+  color: #636363;
+}
+
 @media screen and (max-width: 992px) {
   .banner-text-container {
     width: 100%;
@@ -183,5 +243,19 @@
 
   .whoweare-learnmore-btn {
     margin-top: 20px;
+  }
+
+  .whatwedo-row {
+    padding: 30px 0;
+  }
+
+  .whatwedo-card {
+    display: block;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .whatwedo-card:last-child {
+    margin-bottom: 0;
   }
 }
