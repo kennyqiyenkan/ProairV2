@@ -20,10 +20,8 @@
   bottom: 0;
 }
 
-.content {
-  width: 992px;
+.container {
   height: 100%;
-  margin: auto;
 }
 
 .logo {
@@ -81,9 +79,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  .content {
-    width: 100%;
-  }
   .link-container {
     margin-top: 20px;
   }

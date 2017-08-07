@@ -23,6 +23,17 @@ body {
   display: inline-block;
 }
 
+.container {
+  width: 992px;
+  margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .body-wrapper {
     min-height: calc(100vh - 580px);

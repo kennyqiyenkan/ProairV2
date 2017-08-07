@@ -1,0 +1,179 @@
+.row-banner {
+  width: 100%;
+  background-image: url("./../../assets/images/img-home-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+
+.row-banner-image {
+  object-fit: contain;
+  width:100%;
+  z-index: -1;
+}
+
+.banner-text-container {
+  box-sizing: border-box;
+  padding: 140px 20px;
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+}
+
+.banner-title {
+  margin-top: 0;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  color: #ffffff;
+}
+
+.banner-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.banner-learnmore-btn {
+  margin-top: 30px;
+  width: 141px;
+  height: 40px;
+  border-radius: 4px;
+  border: solid 2px #ffffff;
+  outline: none;
+  background-color: transparent;
+
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+}
+
+.banner-learnmore-btn:hover {
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+}
+
+.whoweare-row {
+  position: relative;
+  width: 100%;
+  padding: 60px 0;
+  overflow: hidden;
+  background-color: #fcfcfc;
+}
+
+.whoweare-img {
+  position: absolute;
+  left: 0;
+  width: 40%;
+
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: gray;
+}
+
+.whoweare-text-container {
+  box-sizing: border-box;
+  padding: 0 20px;
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+  float: right;
+}
+
+.whoweare-title {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  color: #006faf;
+  margin-top: 0;
+}
+
+.whoweare-text {
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.6px;
+  color: #2f2f2f;
+}
+
+.whoweare-btn-container {
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+.whoweare-download-btn {
+  width: 218px;
+  height: 40px;
+  outline: none;
+  box-sizing: border-box;
+  
+  border-radius: 4px;
+  border: none;
+  background-color: #ed9038;
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+}
+
+.whoweare-download-btn:hover {
+  cursor: pointer;
+  background-color: #d77a22;
+}
+
+.whoweare-learnmore-btn {
+  width: 140px;
+  height: 40px;
+  border-radius: 4px;
+  border: solid 2px #ed9038;
+  outline: none;
+  box-sizing: border-box;
+
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 0.6px;
+  color: #ed9038;
+}
+
+.whoweare-learnmore-btn:hover {
+  cursor: pointer;
+  background-color: #ed9038;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-text-container {
+    width: 100%;
+  }
+
+  .whoweare-img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .whoweare-text-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .banner-text-container {
+    padding: 60px 10px;
+  }
+
+  .whoweare-text-container {
+    padding: 0 10px;
+  }
+}

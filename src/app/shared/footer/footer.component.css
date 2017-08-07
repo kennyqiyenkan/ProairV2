@@ -4,11 +4,6 @@
   height: 355px;
 }
 
-.container {
-  width: 992px;
-  margin: auto;
-}
-
 .col-left {
   display: inline-block;
   background-color: #112d4e;
@@ -60,6 +55,7 @@
 
 .col-right .orange-text:hover {
   cursor: pointer;
+  color: #d77a22;
 }
 
 .col-right .link-container {
@@ -99,10 +95,6 @@
 @media screen and (max-width: 992px) {
   .footer {
     height: 580px;
-  }
-
-  .container {
-    width: 100%;
   }
 
   .col-left {
