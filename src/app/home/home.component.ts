@@ -7,12 +7,13 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  selectedProjectImgSrc = "./../../../assets/images/img-home-banner.png";
   selectedProjectImgIndex = 0;
-  projectImg0 = "./../../../assets/images/img-home-banner.png";
-  projectImg1 = "./../../../assets/images/img-home-banner.png";
-  projectImg2 = "./../../../assets/images/img-home-banner.png";
-
+  projectImg = [
+    "./../../../assets/images/img-KPV-Redang.jpg",
+    "./../../../assets/images/img-Lewek-&-Snipe.jpg",
+    "./../../../assets/images/img-Sapurakencana-Aman.jpg"
+  ];
+  selectedProjectImgSrc = this.projectImg[0];
   isSmallScreen = false;
 
   constructor() { }
@@ -24,15 +25,15 @@ export class HomeComponent implements OnInit {
   selectProject(index) {
     switch (index) {
       case 0 :
-        this.selectedProjectImgSrc = this.projectImg0;
+        this.selectedProjectImgSrc = this.projectImg[0];
         this.selectedProjectImgIndex = 0;
         break;
       case 1 :
-        this.selectedProjectImgSrc = this.projectImg1;
+        this.selectedProjectImgSrc = this.projectImg[1];
         this.selectedProjectImgIndex = 1;
         break;
       case 2 :
-        this.selectedProjectImgSrc = this.projectImg2;
+        this.selectedProjectImgSrc = this.projectImg[2];
         this.selectedProjectImgIndex = 2;
         break;
       default:

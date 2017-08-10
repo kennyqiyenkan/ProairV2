@@ -241,7 +241,22 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  
+
+  height: fit-content;
+}
+
+.trackrecord-img-overlay {
+  background-image: linear-gradient(to top, rgba(102, 181, 208, 0.0), rgba(17, 45, 78, 0.4));
+  height: 100%; 
+  width: 100%;
+  content: '';
+
+  position: absolute;
+  top: 0;
+}
+
+.trackrecord-img img {
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -366,6 +381,10 @@
     position: relative;
     width: 100%;
     margin-bottom: 60px;
+  }
+
+  .trackrecord-img-overlay {
+    position: relative;
   }
 
   .trackrecord-text-container {
