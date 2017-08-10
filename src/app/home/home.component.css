@@ -380,7 +380,7 @@
   .trackrecord-img {
     position: relative;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 
   .trackrecord-img-overlay {
