@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -13,9 +13,12 @@ export class HomeComponent implements OnInit {
   projectImg1 = "./../../../assets/images/img-home-banner.png";
   projectImg2 = "./../../../assets/images/img-home-banner.png";
 
+  isSmallScreen = false;
+
   constructor() { }
 
   ngOnInit() {
+    this.onResize(null);
   }
 
   selectProject(index) {
@@ -35,5 +38,11 @@ export class HomeComponent implements OnInit {
       default:
         console.log("[HomeComponent]: index not recognized");
     }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    if ( window.innerWidth <= 992 ) this.isSmallScreen = true;
+    else this.isSmallScreen = false;
   }
 }

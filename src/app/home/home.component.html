@@ -3,12 +3,16 @@
     <div class="banner-text-container">
       <p class="banner-title">We handle all your HVACR needs</p>
       <p class="banner-subtitle">With the longest history in Malaysia, Proair is known as the expert in the HVACR construction industry for shipyards.</p>
+      <button *ngIf="isSmallScreen" class="contact-btn">Contact Us</button>
       <button routerLink="/company" class="banner-learnmore-btn">Learn More</button>
     </div>
   </div>
 </div>
 <div class="whoweare-row">
-  <img class="whoweare-img" src="./../../../assets/images/img-home-banner.png">
+  <img *ngIf="!isSmallScreen"
+       class="whoweare-img" 
+       src="./../../../assets/images/img-workshop.png" 
+       srcset="./../../../assets/images/img-workshop@2x.png 2x, ./../../../assets/images/img-workshop@3x.png 3x">
   <div class="container">
     <div class="whoweare-text-container">
       <p class="row-title">Who We Are</p>
@@ -59,4 +63,12 @@
     </div>
   </div>
   <img class="trackrecord-img" src="{{selectedProjectImgSrc}}">
+</div>
+<div class="contact-row">
+  <div class="container">
+    <div class="contact-container">
+      <p class="contact-text">The firm is capable of providing engineering contracting services, work with us today!</p>
+      <button class="contact-btn">Contact Us</button>
+    </div>
+  </div>
 </div>
