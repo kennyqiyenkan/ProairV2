@@ -1,0 +1,153 @@
+.row {
+  padding: 60px 0;
+  width: 100vw;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+.aboutus-text-container {
+  width: 40%;
+  height: fit-content;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.aboutus-title {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  color: #006faf;
+  margin-top: 0;
+}
+
+.aboutus-text {
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.6px;
+  font-weight: lighter;
+  color: #2f2f2f;
+}
+
+.aboutus-img {
+  position: absolute;
+  width: 40%;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: gray;
+}
+
+.licenced-background {
+  background-color: #fcfcfc;
+}
+
+.licenced-text {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  margin-top: 0;
+
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: #2f2f2f;
+}
+
+.workwithus-row {
+  display: inline-block;
+  width: 100%;
+}
+
+.workwithus-text {
+  display: inline-block;
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: #2f2f2f;
+  margin: none;
+  margin: 10px 0;
+}
+
+.btn-container {
+  display: inline-block;
+  float: right;
+  margin: 10px 0;
+}
+
+.btn-container li {
+  display: inline-block;
+  decoration: none;
+  margin-right: 30px;
+}
+
+.btn-container li:last-child {
+  margin-right: 0;
+}
+
+.contact-btn {
+  width: 141px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #ed9038;
+  border: none;
+  outline: none;
+
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+}
+
+.contact-btn:hover {
+  cursor: pointer;
+  background-color: #d77a22;
+}
+
+.projects-btn {
+  width: 141px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 2px #ed9038;
+  outline: none;
+
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 0.6px;
+  color: #ed9038;
+}
+
+.projects-btn:hover {
+  cursor: pointer;
+  background-color: #ed9038;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+  .row {
+    padding: 45px 0;
+  }
+
+  .aboutus-text-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .aboutus-img {
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .row {
+    padding: 30px 0;
+  }
+  
+}
