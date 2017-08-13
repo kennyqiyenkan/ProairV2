@@ -245,16 +245,6 @@
   height: fit-content;
 }
 
-.trackrecord-img-overlay {
-  background-image: linear-gradient(to top, rgba(102, 181, 208, 0.0), rgba(17, 45, 78, 0.4));
-  height: 100%; 
-  width: 100%;
-  content: '';
-
-  position: absolute;
-  top: 0;
-}
-
 .trackrecord-img img {
   width: 100%;
   background-size: cover;
@@ -377,14 +367,14 @@
     width: 300px;
   }
 
+  .trackrecord-row .container {
+    height: 466px;
+  }
+
   .trackrecord-img {
     position: relative;
     width: 100%;
     margin-bottom: 0;
-  }
-
-  .trackrecord-img-overlay {
-    position: relative;
   }
 
   .trackrecord-text-container {
