@@ -63,6 +63,8 @@
 .workwithus-row {
   display: inline-block;
   width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .workwithus-text {
@@ -143,6 +145,19 @@
     position: relative;
     width: 100%;
   }
+
+  .workwithus-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-container {
+    display: block;
+    padding: 0;
+    float: none;
+    width: fit-content;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -150,4 +165,14 @@
     padding: 30px 0;
   }
   
+  .workwithus-row {
+    padding: 0 10px;
+  }
+
+  .btn-container li {
+    display: block;
+    decoration: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }

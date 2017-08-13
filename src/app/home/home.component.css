@@ -424,6 +424,10 @@
     padding: 30px 0;
   }
 
+  .whatwedo-row .row-title {
+    text-align: left;
+  }
+
   .whatwedo-card {
     display: block;
     margin-bottom: 30px;
