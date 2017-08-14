@@ -368,7 +368,7 @@
   }
 
   .trackrecord-row .container {
-    height: 466px;
+    height: 430px;
   }
 
   .trackrecord-img {
@@ -455,5 +455,11 @@
 
   .contact-row .container {
     padding: 30px 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .trackrecord-row .container {
+    height: 500px;
   }
 }
