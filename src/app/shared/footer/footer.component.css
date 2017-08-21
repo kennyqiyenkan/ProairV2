@@ -71,6 +71,7 @@
   letter-spacing: 0.6px;
   color: #ffffff;
   margin-right: 40px;
+  text-decoration: none;
 }
 
 .col-right .link:hover {
