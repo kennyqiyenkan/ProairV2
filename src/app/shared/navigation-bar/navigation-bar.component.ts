@@ -26,4 +26,13 @@ export class NavigationBarComponent implements OnInit {
     if ( window.innerWidth <= 580 ) this.logoPath = this.miniSizeLogoPath;
     else this.logoPath = this.fullSizeLogoPath;
   }
+
+  @HostListener('window:orientationchange', ['$event'])
+  onOrientationChange(event) {
+    if ( window.innerWidth <= 992 ) this.isSmallWidth = true;
+    else this.isSmallWidth = false;
+    
+    if ( window.innerWidth <= 580 ) this.logoPath = this.miniSizeLogoPath;
+    else this.logoPath = this.fullSizeLogoPath;
+  }
 }
