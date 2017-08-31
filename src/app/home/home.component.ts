@@ -10,8 +10,8 @@ export class HomeComponent implements OnInit {
   selectedProjectImgIndex = 0;
   projectImg = [
     "./../../../assets/images/img-KPV-Redang.jpg",
-    "./../../../assets/images/img-Lewek-&-Snipe.jpg",
-    "./../../../assets/images/img-Sapurakencana-Aman.jpg"
+    "./../../../assets/images/img-gagah-271.jpg",
+    "./../../../assets/images/img-teguh-272.jpg"
   ];
   selectedProjectImgSrc = this.projectImg[0];
   isSmallScreen = false;

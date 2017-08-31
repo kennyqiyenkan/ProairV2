@@ -3,7 +3,7 @@
     <div class="banner-text-container">
       <p class="banner-title">We handle all your HVACR needs</p>
       <p class="banner-subtitle">With the longest history in Malaysia, Proair is known as the expert in the HVACR construction industry for shipyards.</p>
-      <button *ngIf="isSmallScreen" class="contact-btn">Contact Us</button>
+      <button *ngIf="isSmallScreen" class="contact-btn" routerLink="/contact">Contact Us</button>
       <button routerLink="/company" class="banner-learnmore-btn">Learn More</button>
     </div>
   </div>
@@ -58,8 +58,8 @@
       <p class="row-title">Our Track Record</p>
       <p class="row-text">PROAIR SDN BHD has a respectable portfolio of completed projects. Among our notable projects are:</p>
       <button (click)="selectProject(0)" class="trackrecord-project-btn" [ngClass]="{ 'selected': selectedProjectImgIndex == 0 }">KPV Redang</button>
-      <button (click)="selectProject(1)" class="trackrecord-project-btn" [ngClass]="{ 'selected': selectedProjectImgIndex == 1 }">Lewek &amp; Snipe</button>
-      <button (click)="selectProject(2)" class="trackrecord-project-btn" [ngClass]="{ 'selected': selectedProjectImgIndex == 2 }">Sapurakencana Aman</button>
+      <button (click)="selectProject(1)" class="trackrecord-project-btn" [ngClass]="{ 'selected': selectedProjectImgIndex == 1 }">Gagah 271</button>
+      <button (click)="selectProject(2)" class="trackrecord-project-btn" [ngClass]="{ 'selected': selectedProjectImgIndex == 2 }">Teguh 272</button>
     </div>
   </div>
   <div class="trackrecord-img">
@@ -71,7 +71,7 @@
   <div class="container">
     <div class="contact-container">
       <p class="contact-text">The firm is capable of providing engineering contracting services, work with us today!</p>
-      <button class="contact-btn">Contact Us</button>
+      <button class="contact-btn" routerLink="/contact">Contact Us</button>
     </div>
   </div>
 </div>

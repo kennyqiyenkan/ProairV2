@@ -10,6 +10,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { TeamComponent } from './team/team.component';
 import { NavigationBarComponent } from './shared/navigation-bar/navigation-bar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     ProjectsComponent,
     TeamComponent,
     NavigationBarComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
